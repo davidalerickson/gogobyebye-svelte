@@ -19,6 +19,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@lottiefiles/svelte-lottie-player": "^0.2.0",
     "svelte-awesome": "^2.4.2"
   }
 }

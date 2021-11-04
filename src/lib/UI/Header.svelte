@@ -1,3 +1,8 @@
+<script>
+    import Hero from '$lib/Hero.svelte'
+</script>
+
+<Hero/>
 <div class="head-div">
 <h1>Header Info</h1>
 </div>
