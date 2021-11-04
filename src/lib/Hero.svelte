@@ -24,16 +24,25 @@
 	];
 </script>
 
-{#if LottiePlayer}
-	<LottiePlayer
-		src="static\lottie\justTopLogoAnim.json"
-		autoplay={true}
-		loop={true}
-		controls={false}
-		renderer="svg"
-		background="transparent"
-		height={300}
-		width={600}
-		{controlsLayout}
-	/>
-{/if}
+<div class="lottie-image">
+    {#if LottiePlayer}
+        <LottiePlayer
+            src="static\lottie\justTopLogoAnim.json"
+            autoplay={true}
+            loop={true}
+            controls={false}
+            renderer="svg"
+            background="transparent"
+            height="20%"
+            width="60%"
+            {controlsLayout}
+        />
+    {/if}
+</div>
+
+<style>
+.lottie-image{
+    width: 55%;
+    margin: 0 auto;
+}
+</style>

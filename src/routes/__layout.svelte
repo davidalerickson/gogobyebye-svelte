@@ -3,6 +3,8 @@
     import Header from '$lib/UI/Header.svelte'
     import Footer from '$lib/UI/Footer.svelte'
 </script>
-<Header/>
+<header>
+    <Header/>
+</header>
 <slot/>
 <Footer/>
