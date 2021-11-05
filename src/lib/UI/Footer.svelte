@@ -4,7 +4,7 @@
 
         <footer class="footer">
       <div>
-        <SocialLinks/>
+        <SocialLinks scale="1.6"/>
         <p>
           &copy;{new Date().getFullYear()} GoGoByeBye and David Erickson. All rights reserved
         </p>

@@ -10,7 +10,7 @@
   <a href="#news">Posts</a>
   <a href="#contact">Newsletter</a>
   <div class="social-links">
-      <SocialLinks/>
+      <SocialLinks scale="1.5"/>
   </div>
   <!-- right padding div -->
   <div></div>
@@ -51,7 +51,7 @@
   color: black;
 }
 .social-links{
-    transform: translateY(-.75rem);
+    transform: translateY(-.3rem);
       justify-self: right;
 }
 
