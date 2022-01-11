@@ -5,7 +5,7 @@
 
 <div class="wrapper">
 	<Title title="About Us" />{' '}
-	<img src="static\banner-about-dc.jpg" class="img" alt="David and Carmela About" />
+	<img src="banner-about-dc.jpg" class="img" alt="David and Carmela About" />
 	<p>
 		We are David and Carmela, an American-Brazilian couple who has chosen to live our lives as
 		citizens of the world.

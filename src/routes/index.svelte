@@ -1,5 +1,6 @@
 <script>
 	import AboutUs from '$lib/banner/AboutUs.svelte';
+	import TravelQuotes from '$lib/banner/TravelQuotes.svelte';
 </script>
 
 <div class="mid-div">
@@ -49,6 +50,7 @@
 	<div class="sidebar">
 		<h2>Sidebar Info</h2>
 		<AboutUs />
+		<TravelQuotes />
 		<ul>
 			<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate.</li>
 			<li>Molestiae facilis corrupti aliquam ab a, dignissimos nesciunt illo reiciendis.</li>
@@ -58,13 +60,16 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.mid-div {
 		display: grid;
-		grid-template-columns: 3fr 1fr;
+		grid-template-columns: 1fr;
 		column-gap: 2rem;
 		width: 80%;
 		margin: 0 auto;
+		@media (min-width: 768px) {
+			grid-template-columns: 3fr 1fr;
+		}
 	}
 	.sidebar li {
 		list-style: square;
