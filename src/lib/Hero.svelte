@@ -27,7 +27,7 @@
 <div class="lottie-image">
 	{#if LottiePlayer}
 		<LottiePlayer
-			src="lottie\justTopLogoAnim.json"
+			src="/lottie/justTopLogoAnim.json"
 			autoplay={true}
 			loop={true}
 			controls={false}
