@@ -1,35 +1,25 @@
 <script context="module">
-	export async function load({ params }) {
+	export async function load({ url, params }) {
 		console.log(params);
-		const post = {
-			title: 'This is the title',
-			date: new Date(),
-			content: 'This is my first post'
-		};
-		const PostFile = await import(`../../posts/${params.slug}.md`);
+		const PostFile = (await import(`../../posts/${params.slug}/index.md`)).default;
 		return {
 			props: {
-				post,
-				title: PostFile.metadata.title
+				PostFile
 			}
 		};
 	}
-	import Hello from '../../posts/post001.md';
 </script>
 
 <script>
-	export let post;
-	export let title;
+	import ContentLayout from '$lib/UI/ContentLayout.svelte';
+	import Sidebar from '$lib/UI/Sidebar.svelte';
+	export let PostFile;
+	console.log(PostFile);
 </script>
 
-<h1>I have hit a slug route</h1>
-
-<p>{post.date}</p>
-<p>{post.title}</p>
-<p>{post.content}</p>
-
-<h1>I have hit a slug route</h1>
-
-<Hello />
-
-<h1>This is a title gotten from markdown frontmatter {title}</h1>
+<ContentLayout>
+	<PostFile />
+	<div slot="sidebar">
+		<Sidebar />
+	</div>
+</ContentLayout>

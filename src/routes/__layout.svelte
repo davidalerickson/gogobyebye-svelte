@@ -7,5 +7,6 @@
 <header>
 	<Header />
 </header>
+
 <slot />
 <Footer />
