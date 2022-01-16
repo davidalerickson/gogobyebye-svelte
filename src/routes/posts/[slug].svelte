@@ -1,12 +1,20 @@
 <script context="module">
 	export async function load({ url, params }) {
-		console.log(params);
-		const PostFile = (await import(`../../posts/${params.slug}/index.md`)).default;
-		return {
-			props: {
-				PostFile
-			}
-		};
+		try {
+			console.log(params);
+			const PostFile = await import(`../../posts/${params.slug}/index.md`);
+			return {
+				//data passed into svelte component
+				props: {
+					PostFile: PostFile.default
+				}
+			};
+		} catch (error) {
+			return {
+				status: 303,
+				redirect: '/posts'
+			};
+		}
 	}
 </script>
 
