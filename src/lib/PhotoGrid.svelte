@@ -10,6 +10,7 @@
 		//remove static folder from path
 		let truncatedImages = filteredImages.map((image) => image.replace('/static', ''));
 		images = [...truncatedImages];
+		console.log(images);
 	});
 </script>
 
