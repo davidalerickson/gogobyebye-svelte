@@ -8,6 +8,9 @@
 </div>
 
 <style lang="scss">
+	.main-content {
+		padding: 0 2rem;
+	}
 	.content-grid {
 		display: grid;
 		grid-template-columns: 1fr;

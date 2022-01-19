@@ -29,7 +29,7 @@
 			<article>
 				<div class="post-image">
 					<figure>
-						<img src={`/static/postimages/${post.slug}/cover.jpg`} alt={post.title} />
+						<img src={`/postimages/${post.slug}/cover.jpg`} alt={post.title} />
 					</figure>
 				</div>
 				<div class="content">
@@ -42,7 +42,7 @@
 						{/each}
 					{/if}
 					<p>
-						<a href="/posts/{post.slug}">{post.title}</a>
+						<a sveltekit:prefetch href="/posts/{post.slug}">{post.title}</a>
 					</p>
 				</div>
 			</article>

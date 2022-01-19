@@ -4,10 +4,12 @@
 	let imageList = [];
 	import { onMount } from 'svelte';
 	onMount(async () => {
-		const AllImagesObject = import.meta.globEager(`/static/postimages/**/*.jpg`);
+		const AllImagesObject = import.meta.globEager('/static/postimages/**/*.jpg');
 		const AllImages = Object.keys(AllImagesObject);
 		let filteredImages = AllImages.filter((image) => image.includes(slug));
-		images = [...filteredImages];
+		//remove static folder from path
+		let truncatedImages = filteredImages.map((image) => image.replace('/static', ''));
+		images = [...truncatedImages];
 	});
 </script>
 

@@ -14,6 +14,7 @@
 <style>
 	.banner-image {
 		height: 300px;
+		margin: 1rem 0;
 		background-size: cover;
 	}
 </style>

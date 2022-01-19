@@ -11,8 +11,8 @@
 			};
 		} catch (error) {
 			return {
-				status: 303,
-				redirect: '/posts'
+				error: 'Post not found',
+				status: 400
 			};
 		}
 	}

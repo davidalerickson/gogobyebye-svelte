@@ -18,7 +18,7 @@ tags: ['Bologna', 'Italy', 'Cemitary']
 
 # {title}
 
-<Cover  backgroundImgUrl="/static/postimages/{slug}/cover.jpg" />
+<Cover  backgroundImgUrl="/postimages/{slug}/cover.jpg" />
 
 <p class="has-drop-cap">
   I love monumental cemeteries, and the Certosa di Bologna is one of the best in Italy. You can spend hours here looking at the statuary. I made this video as a tribute to those who are buried here and those who loved them.
