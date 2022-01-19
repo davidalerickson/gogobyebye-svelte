@@ -6,6 +6,7 @@
 	onMount(async () => {
 		const AllImagesObject = import.meta.globEager('/static/postimages/**/*.jpg');
 		const AllImages = Object.keys(AllImagesObject);
+		console.log(AllImages);
 		let filteredImages = AllImages.filter((image) => image.includes(slug));
 		//remove static folder from path
 		let truncatedImages = filteredImages.map((image) => image.replace('/static', ''));
