@@ -17,11 +17,8 @@
 		column-gap: 2rem;
 		width: 95%;
 		margin: 0 auto;
-		@media (min-width: 768px) {
+		@media (min-width: 1200px) {
 			grid-template-columns: 3fr 1fr;
 		}
-	}
-	.sidebar-content li {
-		list-style: square;
 	}
 </style>

@@ -24,6 +24,7 @@
 	];
 </script>
 
+<!-- svelte-ignore a11y-no-onchange -->
 <div class="lottie-image">
 	{#if LottiePlayer}
 		<LottiePlayer

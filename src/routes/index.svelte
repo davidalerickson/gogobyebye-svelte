@@ -1,11 +1,16 @@
 <script>
+	import { scale } from 'svelte/transition';
+	import Slider from '$lib/slider.svelte';
 	import ContentLayout from '$lib/UI/ContentLayout.svelte';
 	import Sidebar from '$lib/UI/Sidebar.svelte';
 </script>
 
+<div in:scale>
+	<Slider />
+</div>
 <ContentLayout>
 	<div class="main-content">
-		<h1>Main Content</h1>
+		<h1>Latest posts</h1>
 		<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore rerum aperiam
 			architecto expedita necessitatibus eveniet earum consequatur porro velit corporis tenetur
@@ -51,19 +56,3 @@
 		<Sidebar />
 	</div>
 </ContentLayout>
-
-<style lang="scss">
-	.mid-div {
-		display: grid;
-		grid-template-columns: 1fr;
-		column-gap: 2rem;
-		width: 80%;
-		margin: 0 auto;
-		@media (min-width: 768px) {
-			grid-template-columns: 3fr 1fr;
-		}
-	}
-	.sidebar li {
-		list-style: square;
-	}
-</style>

@@ -4,7 +4,6 @@
 </script>
 
 <div class="sidebar">
-	<h2>Sidebar Info</h2>
 	<AboutUs />
 	<TravelQuotes />
 	<ul>

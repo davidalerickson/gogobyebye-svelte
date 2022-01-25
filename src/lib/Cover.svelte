@@ -9,12 +9,14 @@
 	});
 </script>
 
-<div class="banner-image" bind:this={myTag}>Imaage Div</div>
+<div class="banner-image" bind:this={myTag} />
 
 <style>
 	.banner-image {
-		height: 300px;
+		height: 400px;
 		margin: 1rem 0;
 		background-size: cover;
+		background-position: center;
+		border-radius: 5px;
 	}
 </style>

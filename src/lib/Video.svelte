@@ -33,5 +33,6 @@
 		transform: translateX(-50%);
 		position: relative;
 		margin-bottom: 2rem;
+		border-radius: 5px;
 	}
 </style>

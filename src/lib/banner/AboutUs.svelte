@@ -22,8 +22,15 @@
 		margin: 0;
 	}
 	.img {
-		width: 35%;
-		height: 35%;
+		width: 10%;
+		height: 10%;
+
 		border-radius: 50%;
+	}
+	@media (min-width: 1200px) {
+		.img {
+			width: 35%;
+			height: 35%;
+		}
 	}
 </style>
