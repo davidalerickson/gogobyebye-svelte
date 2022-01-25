@@ -1,13 +1,16 @@
 <script>
 	import { scale } from 'svelte/transition';
-	import Slider from '$lib/slider.svelte';
+	// import Slider from '$lib/slider.svelte';
 	import ContentLayout from '$lib/UI/ContentLayout.svelte';
 	import Sidebar from '$lib/UI/Sidebar.svelte';
 </script>
 
-<div in:scale>
+<!-- <div in:scale>
 	<Slider />
-</div>
+</div> -->
+
+<div class="imageContainer" />
+
 <ContentLayout>
 	<div class="main-content">
 		<h1>Latest posts</h1>
@@ -56,3 +59,14 @@
 		<Sidebar />
 	</div>
 </ContentLayout>
+
+<style>
+	.imageContainer {
+		width: 100%;
+		height: 500px;
+		background-image: url(/slider-images/indigoroof.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+</style>
