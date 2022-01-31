@@ -83,12 +83,6 @@
 				</div>
 			</article>
 		{/each}
-
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptatibus maiores
-			accusamus rerum, mollitia, harum, fuga aliquam distinctio minima totam obcaecati earum rem.
-			Delectus nesciunt animi reprehenderit doloremque quasi.
-		</p>
 	</div>
 	<div slot="sidebar">
 		<Sidebar />
@@ -98,7 +92,7 @@
 <style lang="scss">
 	article {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 30rem 1fr;
 		column-gap: 1.5rem;
 		margin-bottom: 1rem;
 	}
