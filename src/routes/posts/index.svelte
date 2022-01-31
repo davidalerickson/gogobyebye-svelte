@@ -19,7 +19,7 @@
 	import ContentLayout from '$lib/UI/ContentLayout.svelte';
 	import Sidebar from '$lib/UI/Sidebar.svelte';
 	export let posts;
-	// console.log(posts);
+	console.log(posts);
 </script>
 
 <h2 class="posts-title">All Posts</h2>
