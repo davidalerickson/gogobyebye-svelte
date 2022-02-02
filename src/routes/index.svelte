@@ -11,10 +11,9 @@
 </div> -->
 
 <div class="imageContainer" />
-
+<h2 class="posts-title">Latest Posts</h2>
 <ContentLayout>
 	<div class="main-content">
-		<h1>Latest posts</h1>
 		<PostList numPosts="3" />
 	</div>
 	<div slot="sidebar">

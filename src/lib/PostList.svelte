@@ -39,13 +39,13 @@
 					<apan class="category">{post.category}</apan>
 				</div>
 				<h3>
-					<a sveltekit:prefetch href="/posts/{post.slug}">{post.title}</a>
+					<a sveltekit:prefetch href="./posts/{post.slug}">{post.title}</a>
 				</h3>
 				<div class="underline" />
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<a href="/tags/{tag.toLowerCase()}">
+						<a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
 							<span class="tag">
 								{tag}
 							</span>
@@ -95,16 +95,6 @@
 		grid-template-columns: 30rem 1fr;
 		column-gap: 1.5rem;
 		margin-bottom: 1rem;
-	}
-	.posts-title {
-		font-weight: 700;
-		text-transform: uppercase;
-		color: rgb(225, 45, 57);
-		font-size: 1.25rem;
-		margin-top: 1.25rem;
-		margin-bottom: 1.25rem;
-		width: 95%;
-		margin-left: auto;
 	}
 	.post-image {
 		width: 100%;

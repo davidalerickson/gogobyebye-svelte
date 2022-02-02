@@ -126,3 +126,13 @@ p {
 		line-height: 1;
 	}
 }
+.posts-title {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgb(225, 45, 57);
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	width: 95%;
+	margin-left: auto;
+}
