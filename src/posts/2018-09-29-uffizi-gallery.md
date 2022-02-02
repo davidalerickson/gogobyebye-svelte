@@ -6,7 +6,7 @@ date: 2018-09-29
 author: David Erickson
 category: Italy
 readTime: 34
-tags: ['Florence', 'Tuscany', 'Italy', 'Museums']
+tags: ['Florence', 'Tuscany', 'Italy', 'Museum']
 excerpt: I made a montage of artwork from our visit to the Uffizi Gallery in Florence set to Adagio in G Minor by Albinoni. I get goosebumps from this music.
 ---
 

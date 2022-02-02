@@ -1,5 +1,6 @@
 <script>
 	export let numPosts;
+	export let tag;
 	let posts = [];
 	import { onMount } from 'svelte';
 	onMount(async () => {
@@ -11,13 +12,23 @@
 		if (numPosts) {
 			posts = posts.slice(0, numPosts);
 		}
+		if (tag) {
+			posts = posts.filter((post) => {
+				const tagsLowerCase = post.tags.map((tag) => {
+					return tag.toLowerCase();
+				});
+				console.log(tag);
+				console.log(tagsLowerCase);
+				return tagsLowerCase.includes(tag.toLowerCase());
+			});
+		}
 	});
 </script>
 
 <div>
 	<h1>Posts</h1>
 	{#each posts as post}
-		<article in:scale>
+		<article>
 			<div class="post-image">
 				<figure>
 					<img src={`/postimages/${post.slug}/cover.jpg`} alt={post.title} />
@@ -34,9 +45,11 @@
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<span class="tag">
-							{tag}
-						</span>
+						<a href="/tags/{tag.toLowerCase()}" target="_self">
+							<span class="tag">
+								{tag}
+							</span>
+						</a>
 					{/each}
 				{/if}
 				<p>{`${post.excerpt.slice(0, 120)}...`}</p>
