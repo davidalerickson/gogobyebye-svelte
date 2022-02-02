@@ -45,7 +45,7 @@
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<a href="/tags/{tag.toLowerCase()}" target="_self">
+						<a href="/tags/{tag.toLowerCase()}" rel="external">
 							<span class="tag">
 								{tag}
 							</span>
