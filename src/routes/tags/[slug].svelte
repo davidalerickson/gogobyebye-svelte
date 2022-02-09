@@ -17,8 +17,8 @@
 	export let tag;
 </script>
 
+<h2 class="posts-title">{tag}</h2>
 <ContentLayout>
-	<h2>{tag}</h2>
 	<div in:scale>
 		<PostLiist {tag} />
 	</div>

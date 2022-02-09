@@ -23,6 +23,9 @@
 			});
 		}
 	});
+	function goToTag(tag) {
+		window.location.href = `/tags/${tag}`;
+	}
 </script>
 
 <div>
@@ -45,11 +48,14 @@
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
+						<button on:click={() => goToTag(tag)} class="tag">
+							{tag}
+						</button>
+						<!-- <a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
 							<span class="tag">
 								{tag}
 							</span>
-						</a>
+						</a> -->
 					{/each}
 				{/if}
 				<p>{`${post.excerpt.slice(0, 120)}...`}</p>
@@ -121,7 +127,7 @@
 	}
 	.tag {
 		display: inline-block;
-		margin: 0 0.25rem 1rem;
+		margin: 0 0.25rem 0.25rem;
 		background: var(--clr-primary-5);
 		padding: 0.2rem 0.4rem;
 		text-transform: uppercase;
@@ -130,6 +136,7 @@
 		border-radius: var(--radius);
 		letter-spacing: var(--spacing);
 		color: var(--clr-white);
+		cursor: pointer;
 	}
 	.underline {
 		width: 5rem;
