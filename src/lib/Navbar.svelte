@@ -6,7 +6,7 @@
 	<!-- left padding div -->
 	<div />
 	<a class="active" href="/">
-		<img src="/static/newgogobyebyeTrans.png" alt="" />
+		<img src="/static/newgogobyebyetrans.png" alt="" />
 	</a>
 	<a href="/posts">Posts</a>
 	<a href="#contact">Newsletter</a>

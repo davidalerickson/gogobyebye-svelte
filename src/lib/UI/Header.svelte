@@ -8,7 +8,6 @@
 <svelte:window bind:scrollY={y} />
 
 <div class:heroWrapperHidden={y > 200} bind:clientHeight={animationHeight}>
-	>
 	<Hero />
 </div>
 <div class="navbar-base" class:navbarWrapper={y >= animationHeight}>
@@ -16,10 +15,6 @@
 </div>
 
 <style>
-	.heroWrapper {
-		height: 100%;
-		width: 100%;
-	}
 	.heroWrapperHidden {
 		/* animation: hero-animate-down cubic-bezier(1, 0, 0, 1) 2s forwards; */
 		background-color: white;
