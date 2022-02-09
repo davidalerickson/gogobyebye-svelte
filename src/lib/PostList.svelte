@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	export let numPosts;
 	export let tag;
 	let posts = [];
@@ -24,7 +25,7 @@
 		}
 	});
 	function goToTag(tag) {
-		window.location.href = `/tags/${tag}`;
+		goto(`/tags/${tag}`);
 	}
 </script>
 
@@ -48,7 +49,7 @@
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<button on:click={() => goToTag(tag)} class="tag">
+						<button on:click={() => goToTag(tag.toLowerCase())} class="tag">
 							{tag}
 						</button>
 						<!-- <a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
