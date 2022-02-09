@@ -5,7 +5,9 @@
 <nav class="topnav">
 	<!-- left padding div -->
 	<div />
-	<a class="active" href="/">Home</a>
+	<a class="active" href="/">
+		<img src="/static/newgogobyebyeTrans.png" alt="" />
+	</a>
 	<a href="/posts">Posts</a>
 	<a href="#contact">Newsletter</a>
 	<div class="social-links">
@@ -16,15 +18,25 @@
 </nav>
 
 <style>
+	img {
+		transform: translateY(-10px);
+		transition: all 0.3s ease;
+	}
+	img:hover {
+		transform: scale(1.05) translateY(-10px);
+	}
 	.topnav {
+		background-color: white;
 		height: 3rem;
+		width: 100%;
 		display: grid;
 		grid-template-columns: 0.5fr 1fr 1fr 1fr 7fr 0.5fr;
-		background: transparent;
+		/* background: transparent; */
 		border-top: 1px solid var(--clr-grey-8);
 		/* border-bottom: 1px solid var(--clr-grey-8); */
 		box-shadow: 0px 2px 3px var(--clr-grey-8);
 		margin-bottom: 1rem;
+		z-index: 10000;
 	}
 
 	/* Style the links inside the navigation bar */

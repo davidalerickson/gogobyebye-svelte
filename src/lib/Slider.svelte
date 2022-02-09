@@ -19,7 +19,7 @@
 <style>
 	.imageContainer {
 		width: 100%;
-		height: 500px;
+		height: 300px;
 		background-image: url('{images[0]}');
 		background-size: cover;
 		background-position: center;

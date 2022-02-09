@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	let LottiePlayer;
-
+	let myLottie; //var to hold the lottie player
 	onMount(async () => {
 		const module = await import('@lottiefiles/svelte-lottie-player');
 		LottiePlayer = module.LottiePlayer;
@@ -28,6 +28,7 @@
 <div class="lottie-image">
 	{#if LottiePlayer}
 		<LottiePlayer
+			id="lottie-player"
 			src="/lottie/justTopLogoAnim.json"
 			autoplay={true}
 			loop={true}
