@@ -26,6 +26,7 @@
 	});
 	function goToTag(tag) {
 		goto(`/tags/${tag}`);
+		document.location.reload();
 	}
 </script>
 
