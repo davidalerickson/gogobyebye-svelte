@@ -50,14 +50,14 @@
 				{#if post.tags}
 					<span>Tags: </span>
 					{#each post.tags as tag}
-						<button on:click={() => goToTag(tag.toLowerCase())} class="tag">
+						<!-- <button on:click={() => goToTag(tag.toLowerCase())} class="tag">
 							{tag}
-						</button>
-						<!-- <a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
+						</button> -->
+						<a sveltekit:prefetch href="/tags/{tag.toLowerCase()}">
 							<span class="tag">
 								{tag}
 							</span>
-						</a> -->
+						</a>
 					{/each}
 				{/if}
 				<p>{`${post.excerpt.slice(0, 120)}...`}</p>
