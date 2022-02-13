@@ -23,7 +23,13 @@
 				return tagsLowerCase.includes(tag.toLowerCase());
 			});
 		}
+
+		//sort posts descending by date
+		posts.sort((a, b) => {
+			return new Date(b.date) - new Date(a.date);
+		});
 	});
+
 	function goToTag(tag) {
 		goto(`/tags/${tag}`);
 		document.location.reload();
